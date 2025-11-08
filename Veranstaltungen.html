@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <meta name="author" content="EB">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div id="header"></div>
+
+<div style="text-align: center;">
+
+    <!-- Encabezado del evento -->
+    <table style="width: 1201px; margin: auto; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+            <tr>
+                <td style="text-align: center; vertical-align: middle; background-color: rgb(44,179,224); color: white; font-family: Verdana; font-size: 1.5em;">
+                    Lateinamerikanisches Festival
+                </td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Descripción del festival -->
+    <table style="width: 1201px; margin: auto; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+            <tr>
+                <td style="vertical-align: top; width:600px;">
+                    <strong style="font-family: Verdana; font-size: 1.2em;">Festival Latino De Danza y Canto</strong>
+                    <p style="font-family: Verdana; font-size: 1em;">
+                        El Festival Latino Danza y Canto nace con el afán de difundir e incentivar las formas de expresión de los diferentes países de Latinoamérica.<br>
+                        En 2005 se organizó el primer festival, con motivo de celebrar los 10 años de existencia de NOSOTRAS.<br>
+                        Desde entonces continúa esta interesante tradición.<br>
+                        En cada presentación los artistas invitados nos transportan imaginariamente a los distintos países de América Latina.
+                    </p>
+                    <p style="font-family: Verdana;">Bilder aus der IV Festival, März 2010</p>
+                </td>
+                <td style="vertical-align: top; width: 50px;"></td>
+                <td style="vertical-align: top; text-align: center;">
+                    <img src="image/festival_01-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
+                    <img src="image/festival_03-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
+                    <img src="image/festival_05-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
+                </td>
+                <td style="vertical-align: top; width:50px;"></td>
+                <td style="vertical-align: top; text-align: center;">
+                    <img src="image/festival_02-291x194.jpg" alt="" style="width:291px; height:194px;"><br>
+                    <img src="image/festival_04-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
+                    <img src="image/festival_07-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    </div>
+    <!-- ===== FOOTER ===== -->
+   <div id="footer"></div>
+
+
+</body>
+</html>
+<script>
+    // Cargar HEADER
+    fetch("header-de.html")
+      .then(r => r.text())
+      .then(t => {
+        document.getElementById("header").innerHTML = t;
+      });
+
+    // Cargar FOOTER
+    fetch("footer-de.html")
+      .then(r => r.text())
+      .then(t => {
+        document.getElementById("footer").innerHTML = t;
+      });
+  </script>

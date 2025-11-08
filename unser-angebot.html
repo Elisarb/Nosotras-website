@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Unser Angebot</title>
+  <meta name="author" content="EB">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===== HEADER ===== -->
+<div id="header"></div>
+<div style="text-align: center;">
+
+<table style="text-align: left; width: 1201px; margin-left: auto; margin-right: auto; background-color: white;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; background-color: rgb(44, 179, 224); text-align: center;"><big><big><big><big><span style="font-family: Verdana; color: white;">Unser Angebot</span></big></big></big></big><img style="width: 150px; height: 57px;" alt="" src="image/blue150x57.jpg"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><span style="font-family: Verdana;">Auskunft und
+Beratung bei Migrationsfragen und in Krisensituationen</span></li>
+        <li><span style="font-family: Verdana;">Ein offenes
+Ohr für jedes Anliegen</span></li>
+        <li><span style="font-family: Verdana;">Übersetzungs-
+und Dolmetscherdienste</span></li>
+        <li><span style="font-family: Verdana;">Psychologische
+Beratung</span></li>
+        <li><span style="font-family: Verdana;">Hilfe beim
+Ausfüllen von Formularen, beim Umgang mit Behörden</span></li>
+        <li><span style="font-family: Verdana;">Deutsch-,
+Tanz- und Computerkurse</span></li>
+        <li><span style="font-family: Verdana;">Möglichkeit,
+sich mit Personen anderer Kulturen auszutauschen</span></li>
+      </ul>
+      <span style="font-family: Verdana;"><img style="width: 225px; height: 10px;" alt="" src="image/vacio225x10.jpg">Diese
+Angebote stehen auf Deutsch, Spanisch, Englisch, Portugiesisch und
+Italienisch zur Verfügung</span><br>
+      <div style="margin-left: 40px;"><span style="font-family: Verdana;"></span></div>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><big><big><big><span style="font-family: Verdana;"><img style="width: 225px; height: 10px;" alt="" src="image/vacio225x10.jpg"><span style="color: rgb(44, 179, 224);">Wie kann man diese Angebote <br>
+      <img style="width: 225px; height: 10px;" alt="" src="image/vacio225x10.jpg">in Anspruch nehmen?</span></span></big></big></big><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><img style="width: 225px; height: 10px;" alt="" src="image/vacio225x10.jpg"><span style="font-family: Verdana;">Jede interessierte Person kann sich
+telefonisch oder per Email mit uns in Verbindung</span><br>
+      <img style="width: 225px; height: 10px;" alt="" src="image/vacio225x10.jpg"><span style="font-family: Verdana;">setzen
+oder direkt in unserem Büro während der Öffnungszeiten vorbeikommen</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+  <!-- ===== FOOTER ===== -->
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+    // Cargar HEADER
+    fetch("header-de.html")
+      .then(r => r.text())
+      .then(t => {
+        document.getElementById("header").innerHTML = t;
+      });
+
+    // Cargar FOOTER
+    fetch("footer-de.html")
+      .then(r => r.text())
+      .then(t => {
+        document.getElementById("footer").innerHTML = t;
+      });
+  </script>
