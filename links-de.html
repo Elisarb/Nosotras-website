@@ -1,104 +1,148 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Links</title>
     <meta name="author" content="EB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="image/letter-n-and-world-globe.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- ===== HEADER ===== -->
-<div id="header"></div>
+<header class="site-header">
+  <div class="language-bar">
+    <div class="lang-left">
+      <a href="spenden.html" class="donate-button">💚 Spenden</a>
+    </div>
+    <div class="lang-right">
+      <a href="index.html">
+        <img src="image/index-es_90x60.jpg" alt="Español" class="lang-flag"> Spanisch
+      </a>
+      |
+      <a href="ueber-uns-de.html">
+        <img src="image/deutsch_90x61.jpg" alt="Deutsch" class="lang-flag"> Deutsch
+      </a>
+    </div>
+  </div>
 
-<div style="text-align: center;">
-    <!-- Sección de Links -->
-    <table style="width: 1201px; margin: auto; text-align: left;" border="0" cellpadding="5" cellspacing="5">
-        <tbody>
-            <!-- Nosotras Aargau -->
-            <tr>
-                <td style="width:300px; text-align: center;">
-                    <a href="https://www.nosotras-aargau.ch/" target="_blank">
-                        <img src="links/nosotrasaargau-300x162.jpg" alt="nosotras-aargau" style="border:2px solid; width:300px; height:162px;">
-                    </a>
-                </td>
-                <td style="width:20px;"></td>
-                <td style="font-family: Verdana;">
-                    <strong>Nosotras Aargau</strong> es un proyecto de personas interesadas en apoyarte. Contamos con un equipo de profesionales altamente calificadas y dispuestas a brindar ayuda en distintas áreas.<br>
-                    <a href="https://www.nosotras-aargau.ch/" target="_blank">https://www.nosotras-aargau.ch/</a>
-                </td>
-            </tr>
+  <div class="header-main">
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="image/logo-264x68.jpg" alt="Nosotras Logo">
+      </a>
+    </div>
 
-            <!-- FOLC Hispanoamericano -->
-            <tr><td colspan="3"><br></td></tr>
-            <tr>
-                <td style="width:300px; text-align: center;">
-                    <a href="http://folchispanoamericano.ch/" target="_blank">
-                        <img src="links/folc-latinoamericano-300x161.jpg" alt="folc-latinoamericano" style="border:2px solid; width:300px; height:161px;">
-                    </a>
-                </td>
-                <td style="width:20px;"></td>
-                <td style="font-family: Verdana;">
-                    <strong>FOLC Hispanoamericano - Fomento de Lengua y Cultura Hispanoamericana</strong><br>
-                    Organiza cursos en lengua española conocidos como HSK (Heimatliche Sprach- und Kulturkurse) para niños a partir de los 3 años de edad. Cuenta con el reconocimiento de los departamentos de educación de Basilea Ciudad y Basilea Campaña.<br>
-                    <a href="https://folchispanoamericano.ch/" target="_blank">https://folchispanoamericano.ch/</a>
-                </td>
-            </tr>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+      ☰
+    </button>
 
-            <!-- Andina -->
-            <tr><td colspan="3"><br></td></tr>
-            <tr>
-                <td style="text-align: center;">
-                    <img src="links/andina-247x227.jpg" alt="andina" style="border:2px solid; width:247px; height:227px;">
-                </td>
-                <td style="width:20px;"></td>
-                <td>
-                    <strong>Andina</strong> le ofrece diversos productos de América Latina.<br>
-                    <strong>Andina</strong> bietet Ihnen verschiedene Produkte aus Lateinamerika.<br><br>
-                    <strong>Dirección:</strong> Spalenring 150, 4055 Basel, Schweiz<br>
-                    <strong>Tel:</strong> 061 303 77 72 - 079 692 34 66<br>
-                    <strong>Cómo llegar:</strong> Tram 6 y 1 o Bus 50 hasta la parada BRAUSEBAD<br>
-                    <strong>Wie erreicht man Andina:</strong> Tram 6 und 1 oder Bus 50 Haltestelle BRAUSEBAD
-                </td>
-            </tr>
+    <nav class="site-nav" id="siteNav">
+      <a href="ueber-uns.html" class="nav-link">Über uns</a>
+      <a href="unser-angebot.html" class="nav-link">Leistungen</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="kurse.html" class="nav-link">Kurse</a>
+      <a href="Veranstaltungen.html" class="nav-link">Veranstaltungen</a>
+      <a href="projekte.html" class="nav-link">Projekte</a>
+      <a href="gallery.html" class="nav-link">Galerie</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
+      <a href="presse.html" class="nav-link">Presse</a>
+      <a href="links-de.html" class="nav-link">Links</a>
+    </nav>
+  </div>
+</header>
 
-            <!-- CILABA -->
-            <tr><td colspan="3"><br></td></tr>
-            <tr>
-                <td style="text-align: center;">
-                    <a href="http://www.cilaba.ch" target="_blank">
-                        <img src="links/cilaba-300x55.jpg" alt="cilaba" style="border:2px solid; width:308px; height:77px;">
-                    </a>
-                </td>
-                <td style="width:20px;"></td>
-                <td style="font-family: Verdana;">
-                    <strong>Círculo Latinoamericano de Basilea - CILABA</strong><br>
-                    Nació en 2001 a través de la iniciativa de un grupo de personas de origen latinoamericano, para crear un punto de encuentro y difusión de la cultura latinoamericana y el idioma español, organizando y promoviendo actividades culturales.<br>
-                    <a href="http://www.cilaba.ch" target="_blank">https://www.cilaba.ch</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div class="main-content">
 
-    <br>
+  <!-- Links-Sektion -->
+  <section class="links-section">
+    <h2 class="section-title">Interessante Links</h2>
+
+    <!-- Link 1 -->
+    <div class="link-item">
+      <a href="https://www.nosotras-aargau.ch/" target="_blank" class="link-img">
+        <img src="image\nosotrasaargau-300x162.jpg" alt="Nosotras Aargau">
+      </a>
+      <div class="link-info">
+        <strong>Nosotras Aargau</strong> ist ein Projekt von Menschen, die daran interessiert sind, Sie zu unterstützen. Wir haben ein Team hochqualifizierter Fachkräfte, die bereit sind, in verschiedenen Bereichen Hilfe zu leisten.
+        <br>
+        <a href="https://www.nosotras-aargau.ch/" target="_blank" class="link-url">https://www.nosotras-aargau.ch/</a>
+      </div>
+    </div>
+
+    <!-- Link 2 -->
+    <div class="link-item">
+      <a href="http://folchispanoamericano.ch/" target="_blank" class="link-img">
+        <img src="image\folc-latinoamericano-300x161.jpg" alt="FOLC Hispanoamericano">
+      </a>
+      <div class="link-info">
+        <strong>FOLC Hispanoamericano - Förderung der spanischsprachigen Kultur</strong>
+        <br>
+        Organisiert Spanischkurse, bekannt als HSK, für Kinder ab 3 Jahren. Anerkannt von den Bildungsdepartements der Stadt und Region Basel.
+        <br>
+        <a href="https://folchispanoamericano.ch/" target="_blank" class="link-url">https://folchispanoamericano.ch/</a>
+      </div>
+    </div>
+
+  </section>
+
 </div>
-     <!-- ===== FOOTER ===== -->
-   <div id="footer"></div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Sección de contacto -->
+    <div class="footer-section contact">
+      <h3>Kontakt</h3>
+      <p>Spalenring 150, 4055 Basel, Schweiz</p>
+      <p>
+        📞 <a href="tel:+41613037772">061 303 77 72</a> | 
+        <a href="tel:+41783173688">078 317 36 88</a>
+      </p>
+      <p>
+        ✉️ <a href="mailto:info@nosotrasbasel.org">info@nosotrasbasel.org</a>
+      </p>
+    </div>
+
+    <!-- Sección de enlaces rápidos -->
+    <div class="footer-section links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="ueber-uns.html">Startseite</a></li>
+        <li><a href="unser-angebot.html">Leistungen</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección de redes sociales -->
+    <div class="footer-section social">
+      <h3>Folge uns</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Nosotras Basel. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
 
 
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const siteNav = document.getElementById("siteNav");
+
+  menuToggle.addEventListener("click", () => {
+    siteNav.classList.toggle("show");
+  });
+</script>
 </body>
 </html>
-<script>
-    // Cargar HEADER
-    fetch("header-de.html")
-      .then(r => r.text())
-      .then(t => {
-        document.getElementById("header").innerHTML = t;
-      });
-
-    // Cargar FOOTER
-    fetch("footer-de.html")
-      .then(r => r.text())
-      .then(t => {
-        document.getElementById("footer").innerHTML = t;
-      });
-  </script>

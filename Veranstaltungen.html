@@ -2,82 +2,242 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Eventos</title>
+    <title>Veranstaltungen</title>
     <meta name="author" content="EB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="image/letter-n-and-world-globe.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
-<!-- ===== HEADER ===== -->
-<div id="header"></div>
-
-<div style="text-align: center;">
-
-    <!-- Encabezado del evento -->
-    <table style="width: 1201px; margin: auto; text-align: center;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-            <tr>
-                <td style="text-align: center; vertical-align: middle; background-color: rgb(44,179,224); color: white; font-family: Verdana; font-size: 1.5em;">
-                    Lateinamerikanisches Festival
-                </td>
-            </tr>
-            <tr>
-                <td><br></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Descripción del festival -->
-    <table style="width: 1201px; margin: auto; text-align: left;" border="0" cellpadding="2" cellspacing="2">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:600px;">
-                    <strong style="font-family: Verdana; font-size: 1.2em;">Festival Latino De Danza y Canto</strong>
-                    <p style="font-family: Verdana; font-size: 1em;">
-                        El Festival Latino Danza y Canto nace con el afán de difundir e incentivar las formas de expresión de los diferentes países de Latinoamérica.<br>
-                        En 2005 se organizó el primer festival, con motivo de celebrar los 10 años de existencia de NOSOTRAS.<br>
-                        Desde entonces continúa esta interesante tradición.<br>
-                        En cada presentación los artistas invitados nos transportan imaginariamente a los distintos países de América Latina.
-                    </p>
-                    <p style="font-family: Verdana;">Bilder aus der IV Festival, März 2010</p>
-                </td>
-                <td style="vertical-align: top; width: 50px;"></td>
-                <td style="vertical-align: top; text-align: center;">
-                    <img src="image/festival_01-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
-                    <img src="image/festival_03-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
-                    <img src="image/festival_05-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
-                </td>
-                <td style="vertical-align: top; width:50px;"></td>
-                <td style="vertical-align: top; text-align: center;">
-                    <img src="image/festival_02-291x194.jpg" alt="" style="width:291px; height:194px;"><br>
-                    <img src="image/festival_04-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
-                    <img src="image/festival_07-292x195.jpg" alt="" style="width:292px; height:195px;"><br>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-
+  <!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="language-bar">
+    <div class="lang-left">
+      <a href="spenden.html" class="donate-button">💚 Spenden</a>
     </div>
-    <!-- ===== FOOTER ===== -->
-   <div id="footer"></div>
+    <div class="lang-right">
+      <a href="index.html">
+        <img src="image/index-es_90x60.jpg" alt="Español" class="lang-flag"> Español
+      </a>
+      |
+      <a href="ueber-uns.html">
+        <img src="image/deutsch_90x61.jpg" alt="Deutsch" class="lang-flag"> Deutsch
+      </a>
+    </div>
+  </div>
 
+  <div class="header-main">
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="image/logo-264x68.jpg" alt="Nosotras Logo">
+      </a>
+    </div>
 
+    <!-- Menübutton -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="ueber-uns.html" class="nav-link">Wer sind wir?</a>
+      <a href="unser-angebot.html" class="nav-link">Was bieten wir an?</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="kurse.html" class="nav-link">Kurse</a>
+      <a href="veranstaltungen.html" class="nav-link">Veranstaltungen</a>
+      <a href="projekte.html" class="nav-link">Projekte</a>
+      <a href="galerie.html" class="nav-link">Galerie</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
+      <a href="presse.html" class="nav-link">Presse</a>
+      <a href="links.html" class="nav-link">Links</a>
+    </nav>
+  </div>
+</header>
+
+<div class="main-content">
+  <!-- Festival-Sektion -->
+  <section class="festival-section">
+    <h2 class="section-title">Veranstaltungen</h2>
+
+    <!-- ===== GALA LATINA 2025 ===== -->
+    <div class="festival-element">
+      <div class="festival-intro">
+        <h3 class="festival-subtitle">Gala Latina 2025</h3>
+        <p>
+          Willkommen zur <strong>II Gala Latina</strong>!  
+          Unsere Initiative wurde am 25. März 1995 mit der Vision, das interkulturelle Zusammenleben in der Schweizer Gesellschaft zu fördern, ins Leben gerufen.
+"Nosotras", als gemeinnützige Organisation für Personen aus Lateinamerika im Raum Basel, hat sich von Anfang an mit Engagement dafür eingesetzt, Menschen, die hierherkommen, direkt zu unterstützen. Eine aktive Teilnahme in einer Gesellschaft ist wichtig, und deshalb wollen wir Menschen aus anderen Ländern willkommen heissen und in ihrem Integrationsprozess unterstützen. Das Erlernen der Sprache ist grundlegend für weitere Schritte in die neue Umgebung.
+        </p>
+        <p>
+          Die Herausforderungen für Neuzugezogene sind beträchtlich.: Sie müssen sich einer neuen Lebensweise und Kultur stellen, die Normen und Begriffe und vor allem ihre Rechte und Verpflichtungen im Land kennenlernen. Sie werden in jeder Hinsicht Herausforderungen bewältigen, die aussergewöhnliche Anstrengungen sowohl für ihre persönliche Entwicklung als auch für ihre soziale Verbindung benötigen. Wir sind überzeugt, dass sie auf diesem Weg begleitet werden müssen, denn diese Personen sind die Eltern derjenigen, welche die Zukunft dieser Gesellschaft gestalten.
+        </p>
+        <p>
+          Wir danken allen freiwilligen HelferInnen, die „Nosotras" drei Jahrzehnte lang unterstützt haben. Ein besonderer Dank gilt euch, dass ihr heute mit uns feiert. Lasst uns auf das Erreichte und auf die Zukunft anstossen! Salud!
+        </p>
+      </div>
+      <div class="festival-image">
+        <img src="image\gallery\gala 2025\IMG-20250112-WA0009.webp" alt="Flyer Gala Latina 2025" class="festival-img">
+        <p class="festival-note">Flyer Gala Latina – 2025</p>
+      </div>
+    </div>
+
+    <!-- ===== GALA LATINA 2023 ===== -->
+    <div class="festival-element">
+      <div class="festival-intro">
+        <h3 class="festival-subtitle">Gala Latina 2023</h3>
+        <p>
+          Unser Verein entschied, eine besondere Veranstaltung zu organisieren, um die aktive Teilnahme von Migranten in der Schweizer Gesellschaft zu fördern.  
+          Außerdem soll das Projekt das Bewusstsein für die Herausforderungen von Migranten stärken.  
+          Die Anforderungen sind hoch, die Verantwortung groß – dies erfordert psychische, physische und mentale Anstrengung.
+        </p>
+        <p>
+          Bei dieser <strong>„Gala Latina“</strong> ehren wir Menschen aus Lateinamerika, die seit 20 oder 50 Jahren in dieser Region der Schweiz leben.  
+          Wir verleihen schriftliche Anerkennungen für ihre wertvollen persönlichen und beruflichen Beiträge in dieser Gesellschaft.
+        </p>
+        <h4 class="nominations-title">
+          Frauen nominiert für die schriftliche Anerkennung aufgrund ihrer wertvollen Beiträge in dieser Schweizer Gesellschaft:
+        </h4>
+        <div class="nominations-grid">
+          <div>
+            <h5>Brasilien</h5>
+            <ul>
+              <li>Arlete Kaufmann (BS)</li>
+              <li>Clarice dos Santos (BL)</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Kolumbien</h5>
+            <ul>
+              <li>Nelly Stark-Corredor (BL)</li>
+              <li>Martha García (BS)</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Chile</h5>
+            <ul><li>Pamela Alonso und 2 Schwestern (BS)</li></ul>
+          </div>
+          <div>
+            <h5>Ecuador</h5>
+            <ul><li>Katalina Gräflin (BL)</li></ul>
+          </div>
+          <div>
+            <h5>Mexiko</h5>
+            <ul>
+              <li>Elvira Amstutz-Tarello (BL)</li>
+              <li>Claudia Sánchez (BL)</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Peru</h5>
+            <ul>
+              <li>Doris Nonnato (BL)</li>
+              <li>Rosa Scossa (BS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="festival-image">
+        <img src="image/Gala_Latina_Flyer.jpg" alt="Flyer Gala Latina" class="festival-img">
+        <p class="festival-note">Flyer Gala Latina – 25. März 2023</p>
+      </div>
+    </div>
+
+    <!-- ===== IV Festival Latino ===== -->
+    <div class="festival-element">
+      <div class="festival-intro">
+        <h3 class="festival-subtitle">IV Latino Festival für Tanz und Gesang</h3>
+        <p>März 2010</p>
+      </div>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_01-292x195.webp" alt="Festival 1"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_02-291x194.webp" alt="Festival 2"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_03-292x195.webp" alt="Festival 3"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_04-292x195.webp" alt="Festival 4"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_05-292x195.webp" alt="Festival 5"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_06-292x195.webp" alt="Festival 6"></div>
+          <div class="swiper-slide"><img src="image\gallery\festival\festival_07-292x195.webp" alt="Festival 7"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p class="festival-note">Fotos vom IV Festival – März 2010</p>
+    </div>
+
+    <!-- ===== I Festival Latino ===== -->
+    <div class="festival-element">
+      <div class="festival-intro">
+        <h3 class="festival-subtitle">I Latino Festival für Tanz und Gesang</h3>
+        <p>
+          Das Latino Festival für Tanz und Gesang wurde ins Leben gerufen, um die Ausdrucksformen der verschiedenen Länder Lateinamerikas zu verbreiten und zu fördern.
+        </p>
+        <p>
+          2005 fand das erste Festival anlässlich des 10-jährigen Bestehens von <strong>NOSOTRAS</strong> statt.  
+          Seitdem wird diese interessante Tradition fortgeführt.
+        </p>
+        <p>
+          Bei jeder Aufführung entführen uns die eingeladenen Künstler gedanklich in die verschiedenen Länder Lateinamerikas.
+        </p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Kontakt</h3>
+      <p>Spalenring 150, 4055 Basel, Schweiz</p>
+      <p>
+        📞 <a href="tel:+41613037772">061 303 77 72</a> | 
+        <a href="tel:+41783173688">078 317 36 88</a>
+      </p>
+      <p>
+        ✉️ <a href="mailto:info@nosotrasbasel.org">info@nosotrasbasel.org</a>
+      </p>
+    </div>
+    <div class="footer-section links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="unser-angebot.html">Angebot</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h3>Folge uns</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Nosotras Basel. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swipers = [
+    new Swiper(".mySwiper1", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      navigation: { nextEl: ".mySwiper1 .swiper-button-next", prevEl: ".mySwiper1 .swiper-button-prev" },
+      pagination: { el: ".mySwiper1 .swiper-pagination", clickable: true },
+      breakpoints: { 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    }),
+  ];
+  const menuToggle = document.getElementById("menuToggle");
+  const siteNav = document.getElementById("siteNav");
+  menuToggle.addEventListener("click", () => { siteNav.classList.toggle("show"); });
+</script>
 </body>
 </html>
-<script>
-    // Cargar HEADER
-    fetch("header-de.html")
-      .then(r => r.text())
-      .then(t => {
-        document.getElementById("header").innerHTML = t;
-      });
-
-    // Cargar FOOTER
-    fetch("footer-de.html")
-      .then(r => r.text())
-      .then(t => {
-        document.getElementById("footer").innerHTML = t;
-      });
-  </script>

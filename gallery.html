@@ -1,31 +1,31 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE HTML>
+<html lang="de">
 <head>
-  <title>Galería</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Galerie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="image/letter-n-and-world-globe.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
 <body>
-  <!-- ===== HEADER ===== -->
+<!-- ===== HEADER ===== -->
 <header class="site-header">
   <div class="language-bar">
     <div class="lang-left">
-      <a href="donar.html" class="donate-button">💚 Donar</a>
+      <a href="spenden.html" class="donate-button">💚 Spenden</a>
     </div>
     <div class="lang-right">
       <a href="index.html">
-        <img src="image/index-es_90x60.jpg" alt="Español" class="lang-flag"> Español
+        <img src="image/index-es_90x60.jpg" alt="Español" class="lang-flag"> Spanisch
       </a>
       |
-      <a href="ueber-uns.html">
+      <a href="ueber-uns-de.html">
         <img src="image/deutsch_90x61.jpg" alt="Deutsch" class="lang-flag"> Deutsch
       </a>
     </div>
@@ -39,86 +39,75 @@
     </div>
 
     <!-- Botón hamburguesa -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
       ☰
     </button>
 
     <nav class="site-nav" id="siteNav">
-      <a href="index.html" class="nav-link">¿Quiénes somos?</a>
-      <a href="que-ofrecemos.html" class="nav-link">¿Qué ofrecemos?</a>
-      <a href="equipo.html" class="nav-link">Team</a>
-      <a href="cursos.html" class="nav-link">Cursos</a>
-      <a href="eventos.html" class="nav-link">Eventos</a>
-      <a href="proyectos.html" class="nav-link">Proyectos</a>
-      <a href="galeria.html" class="nav-link">Galería</a>
-      <a href="contacto.html" class="nav-link">Contacto</a>
-      <a href="prensa.html" class="nav-link">Prensa</a>
-      <a href="links.html" class="nav-link">Links</a>
+      <a href="ueber-uns.html" class="nav-link">Über uns</a>
+      <a href="unser-angebot.html" class="nav-link">Leistungen</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="kurse.html" class="nav-link">Kurse</a>
+      <a href="Veranstaltungen.html" class="nav-link">Veranstaltungen</a>
+      <a href="projekte.html" class="nav-link">Projekte</a>
+      <a href="gallery.html" class="nav-link">Galerie</a>
+      <a href="kontakt.html" class="nav-link">Kontakt</a>
+      <a href="presse.html" class="nav-link">Presse</a>
+      <a href="links-de.html" class="nav-link">Links</a>
     </nav>
   </div>
 </header>
 
-  <div class="main-content">
-    <section class="gallery-section">
-      <h2 class="section-title">Galería</h2>
+<div class="main-content">
+  <section class="gallery-section">
+    <h2 class="section-title">Galerie</h2>
 
-      <!-- ====== GRUPO 1 ====== -->
-<div class="gallery-group">
-  <div class="gallery-header">
-    <div>
-      <h3>Gala Latina</h3>
-      <p>2025</p>
+    <!-- ====== GRUPPE 1 ====== -->
+    <div class="gallery-group">
+      <div class="gallery-header">
+        <div>
+          <h3>Gala Latina</h3>
+          <p>2025</p>
+        </div>
+        <span class="arrow">&#9654;</span>
+      </div>
+      <div class="gallery-grid hidden" id="gallery-gala2025"></div>
     </div>
-    <span class="arrow">&#9654;</span>
-  </div>
 
-  <!-- Contenedor donde se insertarán las imágenes -->
-  <div class="gallery-grid hidden" id="gallery-gala2025"></div>
+    <!-- ====== GRUPPE 2 ====== -->
+    <div class="gallery-group">
+      <div class="gallery-header">
+        <div>
+          <h3>Gala Latina</h3>
+          <p>2023</p>
+        </div>
+        <span class="arrow">&#9654;</span>
+      </div>
+      <div class="gallery-grid hidden" id="gallery-gala2023"></div>
+    </div>
+
+    <!-- ====== GRUPPE 3 ====== -->
+    <div class="gallery-group">
+      <div class="gallery-header">
+        <div>
+          <h3>IV Lateinamerikanisches Festival für Tanz und Gesang</h3>
+          <p>März 2010</p>
+        </div>
+        <span class="arrow">&#9654;</span>
+      </div>
+      <div class="gallery-grid hidden" id="gallery-festival"></div>
+    </div>
+
+  </section>
 </div>
 
-      <!-- ====== GRUPO 2 ====== -->
-
-
-<div class="gallery-group">
-  <div class="gallery-header">
-    <div>
-      <h3>Gala Latina</h3>
-      <p>2023</p>
-    </div>
-    <span class="arrow">&#9654;</span>
-  </div>
-
-  <!-- Contenedor donde se insertarán las imágenes -->
-  <div class="gallery-grid hidden" id="gallery-gala2023"></div>
-</div>
-
-     <!-- ====== GRUPO 3 ====== -->
-<div class="gallery-group">
-  <div class="gallery-header">
-    <div>
-      <h3>IV Festival Latino de Danza y Canto</h3>
-      <p>Marzo 2010</p>
-    </div>
-    <span class="arrow">&#9654;</span>
-  </div>
-
-  <!-- Contenedor donde se insertarán las imágenes -->
-  <div class="gallery-grid hidden" id="gallery-festival"></div>
-</div>
-
-
-    
-      
-    </section>
-  </div>
-
-  <!-- ===== FOOTER ===== -->
-   <footer class="site-footer">
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
   <div class="footer-container">
 
     <!-- Sección de contacto -->
     <div class="footer-section contact">
-      <h3>Contacto</h3>
+      <h3>Kontakt</h3>
       <p>Spalenring 150, 4055 Basel, Schweiz</p>
       <p>
         📞 <a href="tel:+41613037772">061 303 77 72</a> | 
@@ -131,18 +120,18 @@
 
     <!-- Sección de enlaces rápidos -->
     <div class="footer-section links">
-      <h3>Enlaces</h3>
+      <h3>Links</h3>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="que-ofrecemos.html">Servicios</a></li>
+        <li><a href="ueber-uns.html">Startseite</a></li>
+        <li><a href="unser-angebot.html">Leistungen</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </div>
 
     <!-- Sección de redes sociales -->
     <div class="footer-section social">
-      <h3>Síguenos</h3>
+      <h3>Folge uns</h3>
       <div class="social-icons">
         <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
         <a href="https://www.facebook.com/nosotras.basel.7/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
@@ -152,27 +141,20 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 Nosotras Basel. Todos los derechos reservados.</p>
+    <p>© 2025 Nosotras Basel. Alle Rechte vorbehalten.</p>
   </div>
 </footer>
 
-  <script>
-    // Funcionalidad de abrir/cerrar carpetas
-    document.querySelectorAll(".gallery-header").forEach(title => {
+
+<script>
+  // Öffnen/Schließen der Galeriegruppen
+  document.querySelectorAll(".gallery-header").forEach(title => {
     title.addEventListener("click", () => {
       const group = title.closest(".gallery-group");
       group.classList.toggle("active");
     });
   });
-  </script>
 
-  <script>
-  /**
-   * Función genérica para cargar una galería con GLightbox.
-   * @param {string} id - ID del contenedor HTML.
-   * @param {string} path - Carpeta donde están las imágenes.
-   * @param {Array} images - Lista de nombres de archivo.
-   */
   function loadGallery(id, path, images) {
     const container = document.getElementById(id);
     if (!container) return;
@@ -181,15 +163,11 @@
       const link = document.createElement("a");
       link.href = `${path}/${img}`;
       link.classList.add("glightbox");
-      link.setAttribute("data-gallery", id); // Agrupa por galería
+      link.setAttribute("data-gallery", id);
       link.innerHTML = `<img src="${path}/${img}" alt="${img}" loading="lazy">`;
       container.appendChild(link);
     });
   }
-
-  // ==============================
-  // GALERÍAS DEFINIDAS
-  // ==============================
 
   loadGallery("gallery-festival", "image/gallery/festival", [
     "festival_01-292x195.webp",
@@ -201,71 +179,24 @@
   ]);
 
   loadGallery("gallery-gala2023", "image/gallery/gala 2023", [
-    "DSC_0295.webp",
-    "DSC_0210.webp",
-    "DSC_0213.webp",
-    "DSC_0218.webp",
-    "DSC_0220.webp",
-    "DSC_0223.webp",
-    "DSC_0225.webp",
-    "DSC_0230.webp",
-    "DSC_0232.webp",
-    "DSC_0233.webp",
-    "DSC_0254.webp",
-    "DSC_0298.webp",
-    "DSC_0305.webp",
-    "DSC_0309.webp",
-    "DSC_0312.webp",
-    "DSC_0320.webp",
-    "DSC_0335.webp",
-    "DSC_0339.webp",
-    "DSC_0341.webp",
-    "DSC_0350.webp",
-    "DSC_0358.webp",
-    "DSC_0370.webp",
-    "DSC_0373.webp",
-    "DSC_0378.webp",
-    "DSC_0396.webp",
-    "DSC_0412.webp",
-    "DSC_0438.webp",
-    "DSC_0445.webp",
-    "DSC_0446.webp",
-    "DSC_0474.webp",
-    "DSC02814.webp",
-    "DSC02908.webp"
+    "DSC_0295.webp", "DSC_0210.webp", "DSC_0213.webp", "DSC_0218.webp", "DSC_0220.webp",
+    "DSC_0223.webp", "DSC_0225.webp", "DSC_0230.webp", "DSC_0232.webp", "DSC_0233.webp",
+    "DSC_0254.webp", "DSC_0298.webp", "DSC_0305.webp", "DSC_0309.webp", "DSC_0312.webp",
+    "DSC_0320.webp", "DSC_0335.webp", "DSC_0339.webp", "DSC_0341.webp", "DSC_0350.webp",
+    "DSC_0358.webp", "DSC_0370.webp", "DSC_0373.webp", "DSC_0378.webp", "DSC_0396.webp",
+    "DSC_0412.webp", "DSC_0438.webp", "DSC_0445.webp", "DSC_0446.webp", "DSC_0474.webp",
+    "DSC02814.webp", "DSC02908.webp"
   ]);
 
   loadGallery("gallery-gala2025", "image/gallery/gala 2025", [
-    "IMG_9280.webp",
-    "IMG_9298.webp",
-    "IMG_9305.webp",
-    "IMG_9321.webp",
-    "IMG_9333.webp",
-    "IMG_9338.webp",
-    "IMG_9341.webp",
-    "IMG_9355.webp",
-    "IMG_9363.webp",
-    "IMG_9375.webp",
-    "IMG_9385.webp",
-    "IMG_9387.webp",
-    "IMG_9394.webp",
-    "IMG_9408.webp",
-    "IMG_9419.webp",
-    "IMG_9428.webp",
-    "IMG_9434.webp",
-    "IMG_9435.webp",
-    "IMG_9437.webp",
-    "IMG_9448.webp"
+    "IMG_9280.webp", "IMG_9298.webp", "IMG_9305.webp", "IMG_9321.webp", "IMG_9333.webp",
+    "IMG_9338.webp", "IMG_9341.webp", "IMG_9355.webp", "IMG_9363.webp", "IMG_9375.webp",
+    "IMG_9385.webp", "IMG_9387.webp", "IMG_9394.webp", "IMG_9408.webp", "IMG_9419.webp",
+    "IMG_9428.webp", "IMG_9434.webp", "IMG_9435.webp", "IMG_9437.webp", "IMG_9448.webp"
   ]);
 
-  // Inicializa GLightbox una sola vez
-  const lightbox = GLightbox({
-    selector: '.glightbox'
-  });
-</script>
+  const lightbox = GLightbox({ selector: '.glightbox' });
 
-</body>
-<script>
   const menuToggle = document.getElementById("menuToggle");
   const siteNav = document.getElementById("siteNav");
 
@@ -273,4 +204,5 @@
     siteNav.classList.toggle("show");
   });
 </script>
+</body>
 </html>
