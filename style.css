@@ -519,6 +519,7 @@ h1, h2, h3 {
   margin-bottom: 0.3rem;
   color: #6f0062;
   font-weight: bold;
+  margin-top:0px;
 }
 .nominations-grid ul {
   list-style: none;
@@ -1048,3 +1049,21 @@ h1, h2, h3 {
   margin: 0 auto;     /* asegura que la imagen quede centrada */
 }
 
+.tickets-locations {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ticket-card {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0px 20px;
+  border-radius: 10px;
+  min-width: 220px;
+  background: rgba(255,255,255,0.05);
+}
+
+.ticket-card strong {
+  display: block;
+  margin-bottom: 8px;
+}
